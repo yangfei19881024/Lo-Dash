@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script src="../libs/lodash.js"></script>
+
+	<!--
+		移除数组中 bool值为false 的 值，如 false，null,0,""
+	-->
+	<script>
+
+		var arr = [0,1,2,"",false,null,4];
+		console.log( _.compact(arr) )
+		// [1, 2, 4]
+	</script>
+</body>
+</html>

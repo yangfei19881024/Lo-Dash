@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script src="../libs/lodash.js"></script>
+
+	<!--
+		把现有的数组 根据size大小 分组
+		如果这个数组不能被分割，这个数组 还会保持原样
+	-->
+	<script>
+		var arr = _.chunk(['a', 'b', 'c', 'd'], 3);
+		console.log(arr);
+	</script>
+</body>
+</html>
