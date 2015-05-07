@@ -12,7 +12,34 @@
 		从头开始删除数组 指定个数
 	-->
 	<script>
+		var val1 = _.trunc('hi-diddly-ho there, neighborino');
+		// → 'hi-diddly-ho there, neighbo…'
+		// console.log(val1);
 
+		var val2 = _.trunc('hi-diddly-ho there,neighborino', 24);
+
+		// console.log(val2);
+
+		var val3 = _.trunc('hi-diddly-ho there, neighborino', {
+		  'length': 30,
+		  // 'separator': ','
+		});
+
+
+		// // → 'hi-diddly-ho there,…'
+
+		var val4 = _.trunc('hi-diddly-ho there, neighborino', {
+		  'length': 30,
+		  'separator': /,? +/
+		});
+
+		console.log(val4);
+		// // → 'hi-diddly-ho there…'
+
+		// _.trunc('hi-diddly-ho there, neighborino', {
+		//   'omission': ' […]'
+		// });
+		// // → 'hi-diddly-ho there, neig […]'
 	</script>
 </body>
 </html>

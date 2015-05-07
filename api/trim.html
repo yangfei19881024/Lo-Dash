@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script src="../libs/lodash.js"></script>
+
+	<!--
+		从头开始删除数组 指定个数
+	-->
+	<script>
+		var val1 = _.trim('  abc  ');
+		// → 'abc'
+
+		var val2 = _.trim('-_-abc-_-', '_-');
+
+		// console.log(val2);
+		// → 'abc'
+
+		var val3 = _.map(['  foo  ', '  bar  '], _.trim);
+
+		var val4 = _.map(['  foo  ', '  bar  '], _.trimLeft);
+
+		var val5 = _.map(['  foo  ', '  bar  '], _.trimRight);
+
+		console.log(val5);
+
+		// → ['foo', 'bar']
+	</script>
+</body>
+</html>
