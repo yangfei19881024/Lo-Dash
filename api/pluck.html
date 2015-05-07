@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script src="../libs/lodash.js"></script>
+
+	<!--
+		挑出列表里的指定属性的值
+	-->
+	<script>
+
+		var arr = [
+			{name:"yang",age:23},
+			{name:"yang1",age:26},
+			{name:"yang2",age:25},
+			{name:"yang3",age:24}
+		];
+
+		var val1 = _.pluck(arr,"age");
+
+		console.log(val1);
+
+	</script>
+</body>
+</html>

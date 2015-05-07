@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script src="../libs/lodash.js"></script>
+
+	<!--
+		从头开始删除数组 指定个数
+	-->
+	<script>
+		var arr = [1,2,3,4,5];
+		_.each(arr,function(item){
+			// console.log(item);
+		});
+
+		var arr = [
+			{name:"yang",age:14},
+			{name:"tomcat",age:15},
+			{name:"name",age:16},
+		];
+		_.each(arr,function(item,key){
+			// console.log(item.name+"age:"+item.age);
+		});
+
+		_.forEach(arr,function(item,key){
+			console.log(item.name+"age:"+item.age);
+		});
+
+		var newArr = _.map(arr,function(item,key){
+			// console.log(item.name+"++");
+			return "《"+item.name+"》";
+		});
+		console.log(newArr);
+	</script>
+</body>
+</html>
