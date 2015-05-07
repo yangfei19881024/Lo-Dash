@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script src="../libs/lodash.js"></script>
+
+	<!--
+		挑出列表里的指定属性的值
+	-->
+	<script>
+
+		var arr = [
+			{name:"yang",age:23},
+			{name:"yang1",age:26},
+			{name:"yang2",age:25},
+			{name:"yang3",age:24}
+		];
+
+		<!--对对象操作-->
+		var val1 = _.min(arr,function(item){
+			return item.age;
+		});
+
+
+		<!--对数组操作-->
+
+		var arr1 = [6,4,3,2,1];
+
+		var val2 = _.min(arr1);
+
+		console.log(val2);
+	</script>
+</body>
+</html>
