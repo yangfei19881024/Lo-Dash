@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script src="../libs/lodash.js"></script>
+
+	<!--
+		从头开始删除数组 指定个数
+	-->
+	<script>
+		var users = [
+		  { 'user': 'barney',  'age': 36, 'active': false },
+		  { 'user': 'fred',    'age': 40, 'active': true },
+		  { 'user': 'pebbles', 'age': 1,  'active': false }
+		];
+
+		var nums = [1,2,3,4,5,6,7,8];
+
+		var val1 = _.findIndex(users, function(chr) { return chr.age < 40; });
+		// → 0
+
+		// using the "_.matches" callback shorthand
+		var val2 = _.findIndex(users, { 'age': 1 });
+		// → 2
+
+		// using the "_.property" callback shorthand
+		var val3 = _.findIndex(users, 'active');
+
+
+		var val4 = _.findIndex(users,function(u){
+			return u.age == 1;
+		});
+
+		var val5 = _.findIndex(users,{'age':40});
+
+
+		var val6 = _.findIndex(nums,1);
+		// console.log(val1);
+		// console.log(val2);
+		// console.log(val3);
+		console.log(val6);
+	</script>
+</body>
+</html>
